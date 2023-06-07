@@ -1,4 +1,5 @@
 import streamlit as st
+import subprocess
 
 try:
     import torch
