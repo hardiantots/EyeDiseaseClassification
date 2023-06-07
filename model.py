@@ -23,7 +23,7 @@ def load_model(model_path):
     num_features = model.fc.in_features
     model.fc = nn.Linear(num_features, 4)
     
-    model.load_state_dict(torch.load(model_path), map_location=device)
+    model.load_state_dict(torch.load(model_path, map_location=device))
     model.eval()
 
     return model
