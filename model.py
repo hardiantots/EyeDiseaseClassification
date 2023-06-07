@@ -18,7 +18,7 @@ from torchvision.models import ResNet18_Weights
 @st.cache_resource
 def load_model(model_path):
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    model = models.resnet18(weights=ResNet18_Weights.DEFAULT, map_location=device)
+    model = models.resnet18(weights=ResNet18_Weights.DEFAULT)
     # Set the output according to the number of existing class
     num_features = model.fc.in_features
     model.fc = nn.Linear(num_features, 4)
