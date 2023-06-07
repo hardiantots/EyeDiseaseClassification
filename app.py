@@ -6,7 +6,7 @@ from predict import predict, labels
 from PIL import Image
 
 # Model of CNN
-MODEL_PATH = '/app/result_trainModel/ClassificationEyeDisease.pth'
+MODEL_PATH = '/result_trainModel/ClassificationEyeDisease.pth'
 
 # For load uploaded image
 
