@@ -1,13 +1,12 @@
 import streamlit as st
 import io
-import os
 from model import load_model
 from predict import predict, labels
 
 from PIL import Image
 
 # Model of CNN
-MODEL_PATH = os.path.join("result_trainModel", "ClassificationEyeDisease.pth")
+MODEL_PATH = '/app/result_trainModel/ClassificationEyeDisease.pth'
 
 # For load uploaded image
 
