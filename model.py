@@ -1,5 +1,4 @@
 import streamlit as st
-import torch
 import torch.nn as nn
 from torchvision import models
 from torchvision.models import ResNet18_Weights
