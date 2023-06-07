@@ -1,5 +1,13 @@
 import streamlit as st
-import torch
+
+try:
+    import torch
+# This block executes only on the first run when your package isn't installed
+except ModuleNotFoundError as e:
+    subprocess.Popen([f"{sys.executable} -m pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu"], shell=True)
+    # wait for subprocess to install package before running your actual code below
+    time.sleep(30)
+
 import torch.nn as nn
 from torchvision import models
 from torchvision.models import ResNet18_Weights
