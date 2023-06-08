@@ -20,6 +20,7 @@ def load_image(file_upload):
 
 # Dashboard
 def main():
+    st.set_page_config(page_title="Eye Disease Classification")
     st.title("Eye Disease Classification")
     st.write("Detect 4 Class : Cataract, Diabetic Retinopathy, Glaucoma, Normal")
 
