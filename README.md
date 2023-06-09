@@ -1,6 +1,6 @@
 # EyeDiseaseClassification
 
-#### 1. For complete explanation about the project can see the PPT file in the repository
+#### 1. For complete explanation about the project can see the Presentation (PPT file) in the repository
 #### 2. To see the complete step to make the model can see the ipynb file in the repository
 
 
