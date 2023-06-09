@@ -1,6 +1,7 @@
 import sys
 import time
 import subprocess
+import streamlit as st
 try:
     import torch
 # This block executes only on the first run when your package isn't installed
